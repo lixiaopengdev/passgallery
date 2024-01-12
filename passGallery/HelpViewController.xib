@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ko8-5W-3Pj">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHd-9w-Un5" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="700"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.相册里面的照片删除后，这个软件里面的相片还在么?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opL-sC-lSE">
+                                    <rect key="frame" x="10" y="10" width="580" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="W2P-oe-h72"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这个软件在从相册里面导入照片的时候，是直接从相册里面进行一次相片的拷贝。也就是说，当照片导入到这个软件之后，把手机默认的相册里面的照片删除了，这里的照片也是存在的。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kv9-73-YoB">
+                                    <rect key="frame" x="10" y="60" width="580" height="90"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="90" id="fGw-K3-0fy"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="opL-sC-lSE" firstAttribute="top" secondItem="CHd-9w-Un5" secondAttribute="top" constant="10" id="9C7-lb-fGT"/>
+                                <constraint firstAttribute="trailing" secondItem="opL-sC-lSE" secondAttribute="trailing" constant="10" id="Deo-vO-772"/>
+                                <constraint firstItem="kv9-73-YoB" firstAttribute="top" secondItem="opL-sC-lSE" secondAttribute="bottom" constant="10" id="Uy4-5f-9T8"/>
+                                <constraint firstItem="opL-sC-lSE" firstAttribute="leading" secondItem="CHd-9w-Un5" secondAttribute="leading" constant="10" id="cYp-ue-xZl"/>
+                                <constraint firstAttribute="height" constant="700" id="ddN-Uq-hFf"/>
+                                <constraint firstItem="kv9-73-YoB" firstAttribute="leading" secondItem="CHd-9w-Un5" secondAttribute="leading" constant="10" id="ggI-v2-b9S"/>
+                                <constraint firstAttribute="trailing" secondItem="kv9-73-YoB" secondAttribute="trailing" constant="10" id="jAv-dL-A9j"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="CHd-9w-Un5" firstAttribute="top" secondItem="Ko8-5W-3Pj" secondAttribute="top" id="2Gc-Ca-JBE"/>
+                        <constraint firstAttribute="centerX" secondItem="CHd-9w-Un5" secondAttribute="centerX" id="5Wo-A6-WfS"/>
+                        <constraint firstItem="CHd-9w-Un5" firstAttribute="leading" secondItem="Ko8-5W-3Pj" secondAttribute="leading" id="RNw-da-LW0"/>
+                        <constraint firstAttribute="bottom" secondItem="CHd-9w-Un5" secondAttribute="bottom" id="cX0-B5-CLX"/>
+                        <constraint firstAttribute="trailing" secondItem="CHd-9w-Un5" secondAttribute="trailing" id="esE-8d-eIz"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ko8-5W-3Pj" secondAttribute="bottom" id="1dD-Dp-v66"/>
+                <constraint firstAttribute="trailing" secondItem="Ko8-5W-3Pj" secondAttribute="trailing" id="KYu-hd-cZX"/>
+                <constraint firstItem="Ko8-5W-3Pj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Mpw-h8-qvy"/>
+                <constraint firstItem="Ko8-5W-3Pj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qae-mO-qBg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="361" y="243"/>
+        </view>
+    </objects>
+</document>

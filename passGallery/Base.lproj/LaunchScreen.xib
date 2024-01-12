@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="584"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lunch.png" translatesAutoresizingMaskIntoConstraints="NO" id="wP1-Wb-XVL">
+                    <rect key="frame" x="175" y="217" width="150" height="150"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="BSg-v0-pku"/>
+                        <constraint firstAttribute="width" constant="150" id="Oen-v2-p5T"/>
+                        <constraint firstAttribute="width" secondItem="wP1-Wb-XVL" secondAttribute="height" multiplier="486:278" id="Te5-fq-shV"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Te5-fq-shV"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wP1-Wb-XVL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="5jb-xD-1ef"/>
+                <constraint firstAttribute="centerX" secondItem="wP1-Wb-XVL" secondAttribute="centerX" id="C3T-oA-dJi"/>
+                <constraint firstItem="wP1-Wb-XVL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="I35-PT-IYg"/>
+                <constraint firstAttribute="trailing" secondItem="wP1-Wb-XVL" secondAttribute="trailing" id="YeF-H7-bzA"/>
+                <constraint firstItem="wP1-Wb-XVL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="131" id="pBH-Ck-H68"/>
+                <constraint firstItem="wP1-Wb-XVL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tVX-Wm-A61"/>
+                <constraint firstAttribute="trailing" secondItem="wP1-Wb-XVL" secondAttribute="trailing" constant="20" symbolic="YES" id="wx9-HI-jcP"/>
+                <constraint firstItem="wP1-Wb-XVL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="175" id="zUB-Ys-yw0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="I35-PT-IYg"/>
+                    <exclude reference="YeF-H7-bzA"/>
+                    <exclude reference="pBH-Ck-H68"/>
+                    <exclude reference="tVX-Wm-A61"/>
+                    <exclude reference="wx9-HI-jcP"/>
+                    <exclude reference="zUB-Ys-yw0"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="279" y="479"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lunch.png" width="486" height="278"/>
+    </resources>
+</document>

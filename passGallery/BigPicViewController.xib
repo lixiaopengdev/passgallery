@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BigPicViewController">
+            <connections>
+                <outlet property="imgView" destination="MEK-Lh-HhM" id="i8F-CN-hjW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MEK-Lh-HhM">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hku-Wj-4iy">
+                    <rect key="frame" x="30" y="530" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="ZdT-1o-Gzb"/>
+                        <constraint firstAttribute="height" constant="40" id="vYH-Pl-t8R"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="left.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="leftClicked" destination="-1" eventType="touchUpInside" id="9E1-cT-s76"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suZ-OV-I7r">
+                    <rect key="frame" x="530" y="530" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="OAW-Dj-R13"/>
+                        <constraint firstAttribute="width" constant="40" id="VwP-nu-5Br"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="right.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="rightClicked" destination="-1" eventType="touchUpInside" id="16c-lG-wOx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hku-Wj-4iy" secondAttribute="bottom" constant="30" id="GA8-e7-ka5"/>
+                <constraint firstAttribute="bottom" secondItem="MEK-Lh-HhM" secondAttribute="bottom" id="IBk-3h-jmu"/>
+                <constraint firstAttribute="trailing" secondItem="MEK-Lh-HhM" secondAttribute="trailing" id="LXd-Jw-wd6"/>
+                <constraint firstAttribute="trailing" secondItem="suZ-OV-I7r" secondAttribute="trailing" constant="30" id="Yhy-8k-UJt"/>
+                <constraint firstItem="MEK-Lh-HhM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="apO-Rr-CAa"/>
+                <constraint firstItem="hku-Wj-4iy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="czc-BF-Gnb"/>
+                <constraint firstItem="MEK-Lh-HhM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hWb-TE-4jp"/>
+                <constraint firstAttribute="bottom" secondItem="suZ-OV-I7r" secondAttribute="bottom" constant="30" id="qiy-l8-aV1"/>
+            </constraints>
+            <point key="canvasLocation" x="77" y="90"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="left.png" width="64" height="64"/>
+        <image name="right.png" width="64" height="64"/>
+    </resources>
+</document>
